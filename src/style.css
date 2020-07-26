@@ -35,16 +35,16 @@ form {
   border-radius: 5px;
 }
 
-form .input-block {
+div {
   margin-bottom: 20px;
 }
 
-form .input-block label {
+div label {
   font-size: 14px;
   color: #008269;
 }
 
-form .input-block input {
+div input {
   width: 100%;
   display: block;
   margin-top: 8px;
@@ -56,7 +56,7 @@ form .input-block input {
   outline-color: #008269;
 }
 
-form .btn-login {
+form button {
   display: block;
   min-width: 120px;
   border: none;
@@ -67,11 +67,11 @@ form .btn-login {
   padding: 7px;
 }
 
-form {
+.form-login {
   overflow: hidden;
   animation: fade 500ms;
 }
-/* Ordem animation: Name / Duration / */
+
 form .input-block:nth-child(1) {
   animation: move 500ms;
 }
@@ -113,6 +113,11 @@ form .btn-login {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.form-hiden {
+  animation: down 1.2s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 @keyframes down {
   from { 
     transform: translateY(0);
@@ -137,10 +142,10 @@ form.validate-error {
     transform: translateX(15%);
   }
 }
-  /* squares */
-  body {
+/* squares */
+body {
     overflow: hidden;
-  }
+}
 .squares li {
   width: 40px;
   height: 40px;
@@ -160,5 +165,35 @@ form.validate-error {
   } to {
     opacity: 0;
     transform: translateY(-900px) rotate(960deg);
+  }
+}
+
+.first-question {
+  visibility: hidden;
+}
+
+.congratulations {
+  visibility: hidden;
+  position: relative;
+  bottom: 30vh;
+}
+
+.input-block-3 {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.form-up-question {
+  visibility: visible;
+  animation: up-question 1.2s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes up-question {
+  from { 
+    transform: translateY(100vh);
+  } to {
+    transform: translateY(0vh);
   }
 }

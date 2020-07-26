@@ -1,8 +1,8 @@
-# jacolpn.github.io
+# [jacolpn.github.io](jacolpn.github.io)
 
-# Formulário animado com JS puro e CSS Animation
+## Formulário animado com JS puro e CSS Animation
 
-## Animation
+### Animation
 - animation-name: animationname;
 - animation-duration: 2s;
 - animation-delay: 3s;
@@ -18,7 +18,7 @@
 }
 ```
 
-## References
+### References
 
 [CSS Animation Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 

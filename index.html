@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="src/public/images/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>JacoNeveS</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <section class="form-section">
       <h1>Enter the JacoNeveS</h1>
 
       <div class="form-wrapper">
-        <form action="">
+        <form action="" id="form-login" class="form-login">
           <div class="input-block">
             <label for="login-email">Email</label>
             <input type="email" id="login-email" />
@@ -26,8 +27,34 @@
       </div>
     </section>
 
-    <ul class="squares"></ul>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <form action="" id="first-question" class="first-question">
+          <div class="input-block-2">
+            <label for="lbl-first-question">
+              What's your name?
+            </label>
+            <input type="text" id="txt-first-question" />
+          </div>
+          <button type="submit" class="btn-first-question">Finish</button>
+        </form>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="form-section">
+      <div class="form-wrapper">
+        <form action="" id="congratulations" class="congratulations">
+          <div class="input-block-3">
+            <img src="https://img.icons8.com/plasticine/100/000000/check-all.png"/>
+            <label for="lbl-congratulations">
+              Thank you!
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <ul class="squares"></ul>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
