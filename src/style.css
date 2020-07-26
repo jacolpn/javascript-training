@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100vh;
+html, body {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -19,13 +19,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1 {
-  font-size: 32px;
-  letter-spacing: 1px;
-  margin: 20px 0;
-  color: white;
 }
 
 form {
@@ -143,9 +136,6 @@ form.validate-error {
   }
 }
 /* squares */
-body {
-    overflow: hidden;
-}
 .squares li {
   width: 40px;
   height: 40px;
@@ -174,8 +164,6 @@ body {
 
 .congratulations {
   visibility: hidden;
-  position: relative;
-  bottom: 30vh;
 }
 
 .input-block-3 {

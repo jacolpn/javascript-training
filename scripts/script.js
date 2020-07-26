@@ -7,13 +7,13 @@ const formCongratulations = document.querySelector("#congratulations");
 /* Inserir uma classe em um componente */
 btnLogin.addEventListener("click", event => {
   event.preventDefault();
-  
+
   const fields = [...document.querySelectorAll(".input-block input")]
   fields.forEach(field => {
     if (field.value == "")
     form.classList.add("validate-error")
   });
-  
+
   const formError = document.querySelector(".validate-error");
   if (formError) {
     formError.addEventListener("animationend", event => {
@@ -24,10 +24,11 @@ btnLogin.addEventListener("click", event => {
   } else {
     form.classList.add("form-hide");
   }
-  
+
   const formHidden = document.querySelector(".form-hide");
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
+      form.style.display = "none";
       formQuestion.classList.add("form-up-question");
     })
   }
@@ -41,7 +42,7 @@ btnFirstQuestion.addEventListener("click", event => {
     if (field.value == "")
     formQuestion.classList.add("validate-error")
   });
-  
+
   const formError = document.querySelector(".validate-error");
   if (formError) {
     formError.addEventListener("animationend", event => {
@@ -60,6 +61,7 @@ btnFirstQuestion.addEventListener("click", event => {
   const formHidden = document.querySelector(".form-hiden");
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
+      formQuestion.style.display = "none";
       formCongratulations.classList.add("form-up-question");
     })
   }
