@@ -3,6 +3,8 @@ const btnFirstQuestion = document.querySelector(".btn-first-question")
 const form = document.querySelector("#form-login");
 const formQuestion = document.querySelector("#first-question");
 const formCongratulations = document.querySelector("#congratulations");
+const sectionLogin = document.querySelector("#section-login");
+const sectionQuestion = document.querySelector("#section-question")
 
 /* Inserir uma classe em um componente */
 btnLogin.addEventListener("click", event => {
@@ -28,7 +30,7 @@ btnLogin.addEventListener("click", event => {
   const formHidden = document.querySelector(".form-hide");
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
-      form.style.display = "none";
+      sectionLogin.parentNode.removeChild(sectionLogin);
       formQuestion.classList.add("form-up-question");
     })
   }
@@ -61,7 +63,7 @@ btnFirstQuestion.addEventListener("click", event => {
   const formHidden = document.querySelector(".form-hiden");
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
-      formQuestion.style.display = "none";
+      sectionQuestion.parentNode.removeChild(sectionQuestion);
       formCongratulations.classList.add("form-up-question");
     })
   }
