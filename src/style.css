@@ -5,60 +5,62 @@
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
-  background-color: #008269;
+  background-color: #282c34;
   font-family: Roboto, Arial, sans-serif;
 }
 
 section {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
 }
 
 form {
-  margin: 20px 0;
+  margin: 3rem;
   background-color: white;
-  padding: 30px 25px;
-  border-radius: 5px;
+  padding: 1.5rem;
+  border-radius: 0.2rem;
 }
 
 div {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 div label {
-  font-size: 14px;
-  color: #008269;
+  font-size: 1rem;
+  color: #282c34;
 }
 
 div input {
   width: 100%;
   display: block;
-  margin-top: 8px;
-  padding: 7px;
-  font-size: 16px;
-  color: #008269;
-  border-radius: 2px;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  color: #282c34;
+  border-radius: 0.2rem;
   border: 1px solid #ccddef;
-  outline-color: #008269;
+  outline-color: #282c34;
 }
 
 form button {
   display: block;
-  min-width: 120px;
+  min-width: 9rem;
   border: none;
-  background-color: #008269;
+  background-color: #282c34;
   color: white;
-  border-radius: 25px;
+  border-radius: 1.7rem;
   margin: auto;
-  padding: 7px;
+  padding: 0.5rem;
+  cursor: pointer;
+  outline: none;
 }
 
 .form-login {
@@ -107,11 +109,6 @@ form .btn-login {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.form-hiden {
-  animation: down 1.2s forwards;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 @keyframes down {
   from { 
     transform: translateY(0);
@@ -138,13 +135,12 @@ form.validate-error {
 }
 /* squares */
 .squares li {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.14);
   display: block;
   position: absolute;
-  bottom: -40px;
   animation: up 2s infinite alternate;
+  z-index: -1;
+  border-radius: 0.1rem;
 }
 
 @keyframes up {
@@ -159,30 +155,8 @@ form.validate-error {
   }
 }
 
-.first-question {
-  visibility: hidden;
-}
-
-.congratulations {
-  visibility: hidden;
-}
-
-.input-block-3 {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.form-up-question {
-  visibility: visible;
-  animation: up-question 1.2s forwards;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-@keyframes up-question {
-  from { 
-    transform: translateY(100vh);
-  } to {
-    transform: translateY(0vh);
+@media (max-width: 400px) {
+  div input {
+    padding: 0.3rem;
   }
 }
