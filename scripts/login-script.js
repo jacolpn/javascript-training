@@ -1,44 +1,46 @@
 const btnLogin = document.querySelector(".btn-login");
 const form = document.querySelector("#form-login");
+const sectionTabs = document.querySelector("#section-tabs");
 const sectionLogin = document.querySelector("#section-login");
 
 /* Inserir uma classe em um componente */
 btnLogin.addEventListener("click", event => {
   event.preventDefault();
   
-  const fields = [...document.querySelectorAll(".input-block input")]
+  const fields = [...document.querySelectorAll(".input-block-login input")]
   fields.forEach(field => {
     if (field.value == "")
-    form.classList.add("validate-error")
+    form.classList.add("validate-error-login")
   });
 
-  const formError = document.querySelector(".validate-error");
+  const formError = document.querySelector(".validate-error-login");
   if (formError) {
     formError.addEventListener("animationend", event => {
-      if (event.animationName == "nono") {
-        formError.classList.remove("validate-error");
+      if (event.animationName == "nono-login") {
+        formError.classList.remove("validate-error-login");
       }
     });
   } else {
-    form.classList.add("form-hide");
+    form.classList.add("form-hide-login");
   }
 
-  const formHidden = document.querySelector(".form-hide");
+  const formHidden = document.querySelector(".form-hide-login");
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
       sectionLogin.parentNode.removeChild(sectionLogin);
+      sectionTabs.style.display = "flex";
     })
   }
 });
 
 form.addEventListener("animationstart", event => {
-  if(event.animationName == "down") {
+  if(event.animationName == "down-login") {
     document.querySelector("body").style.overflow = "hidden";
   }
 });
 
 form.addEventListener("animationend", event => {
-  if(event.animationName == "down")
+  if(event.animationName == "down-login")
     form.style.display = "none";
     document.querySelector("body").style.overflow = "none";
 });
@@ -60,6 +62,11 @@ form.addEventListener("animationend", event => {
   li.style.left = `${position}%`;
   
   li.style.animationDuration = `${duration}s`;
-  li.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, ${Math.random()}, ${Math.random()})`;
+  li.style.animationTimingFunction = `
+    cubic-bezier(${Math.random()},
+    ${Math.random()},
+    ${Math.random()},
+    ${Math.random()})
+  `;
   ulSquares.appendChild(li);
 }

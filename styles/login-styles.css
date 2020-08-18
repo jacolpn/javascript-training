@@ -1,20 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100vh;
-  width: 100vw;
-}
-
-body {
-  background-color: #282c34;
-  font-family: Roboto, Arial, sans-serif;
-}
-
-section {
+.section-login {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -22,69 +6,72 @@ section {
   align-items: center;
 }
 
-form {
+.form-login {
   margin: 3rem;
-  background-color: white;
+  background-color: var(--white);
   padding: 1.5rem;
   border-radius: 0.2rem;
 }
 
-div {
+.input-block-login {
   margin-bottom: 1rem;
 }
 
-div label {
+.label-login {
   font-size: 1rem;
-  color: #282c34;
 }
 
-div input {
+.input-login {
   width: 100%;
   display: block;
   margin-top: 0.5rem;
   padding: 0.4rem;
   font-size: 1rem;
-  color: #282c34;
+  background-color: var(--grey);
   border-radius: 0.2rem;
-  border: 1px solid #ccddef;
-  outline-color: #282c34;
+  border: 1px solid var(--green-high-text);
+  outline-color: var(--green-high-text);
+  color: var(--green-high-text);
 }
 
-form button {
+.form-login {
+  overflow: hidden;
+  animation: fade-login 500ms;
+}
+
+.input-block-login:nth-child(1) {
+  animation: move-login 500ms;
+}
+
+.input-block-login:nth-child(2) {
+  animation: move-login 500ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+}
+
+.btn-login {
   display: block;
   min-width: 9rem;
   border: none;
-  background-color: #282c34;
-  color: white;
+  background-color: var(--green);
+  color: var(--white);
   border-radius: 1.7rem;
   margin: auto;
   padding: 0.5rem;
   cursor: pointer;
   outline: none;
-}
-
-.form-login {
-  overflow: hidden;
-  animation: fade 500ms;
-}
-
-form .input-block:nth-child(1) {
-  animation: move 500ms;
-}
-
-form .input-block:nth-child(2) {
-  animation: move 500ms;
-  animation-delay: 100ms;
-  animation-fill-mode: backwards;
-}
-
-form .btn-login {
-  animation: move 500ms;
+  font: 700 1.0rem Archivo;
+  text-transform: uppercase;
+  animation: move-login 500ms;
   animation-delay: 250ms;
   animation-fill-mode: backwards;
 }
 
-@keyframes fade {
+.btn-login:hover {
+  background: var(--green-dark);
+}
+
+@keyframes fade-login {
   from {
     opacity: 0;
     transform: scale(0.9);
@@ -94,7 +81,7 @@ form .btn-login {
   }
 }
 
-@keyframes move {
+@keyframes move-login {
   from {
     opacity: 0;
     transform: translateX(-35%);
@@ -104,12 +91,12 @@ form .btn-login {
   }
 }
 
-.form-hide {
-  animation: down 1.2s forwards;
+.form-hide-login {
+  animation: down-login 1.2s forwards;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@keyframes down {
+@keyframes down-login {
   from { 
     transform: translateY(0);
   } to {
@@ -117,12 +104,12 @@ form .btn-login {
   }
 }
 
-form.validate-error {
-  animation: nono 200ms linear, fade paused;
+form.validate-error-login {
+  animation: nono-login 200ms linear, fade-login paused;
   animation-iteration-count: 2;
 }
 
-@keyframes nono {
+@keyframes nono-login {
   0%, 100% {
     transform: translateX(0);
   }
@@ -133,17 +120,17 @@ form.validate-error {
     transform: translateX(15%);
   }
 }
-/* squares */
+
 .squares li {
   background-color: rgba(255, 255, 255, 0.14);
   display: block;
   position: absolute;
-  animation: up 2s infinite alternate;
+  animation: up-squares 2s infinite alternate;
   z-index: -1;
   border-radius: 0.1rem;
 }
 
-@keyframes up {
+@keyframes up-squares {
   from {
     opacity: 0;
     transform: translateY(0);
@@ -156,7 +143,7 @@ form.validate-error {
 }
 
 @media (max-width: 400px) {
-  div input {
+  .input-block-login {
     padding: 0.3rem;
   }
 }
