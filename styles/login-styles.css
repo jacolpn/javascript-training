@@ -1,5 +1,5 @@
 .section-login {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -25,6 +25,8 @@
   padding: 2.5rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
+  height: 13rem;
+  width: 17rem;
 }
 
 .input-block-login {
@@ -32,7 +34,7 @@
 }
 
 .label-login {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .input-login {
@@ -41,7 +43,7 @@
   margin: 0.8rem 0 2rem 0;
   padding: 0.4rem;
   font-size: 1rem;
-  font: 400 1.0rem Archivo;
+  font: 300 1.0rem Archivo;
   background-color:  var(--white-transparency-medium);
   border-radius: 0.2rem;
   border: 1px solid var(--white);
@@ -161,4 +163,5 @@
     width: 100%;
     display: block;
     margin: 0.8rem 0 0.8rem 0;
+  }
 }

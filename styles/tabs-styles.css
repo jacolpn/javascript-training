@@ -1,13 +1,12 @@
 .section-tabs {
-  margin: auto;
-  padding: 3rem 1rem;
+  height: 90vh;
+  width: 100vw;
   display: none;
-  align-items: center;
   justify-content: center;
 }
 
 .wrapper-tabs {
-  max-width: 400px;
+  margin-top: 3rem;
 }
 
 .tab-links {
@@ -60,8 +59,7 @@
 }
 
 .javascript-wrapper {
-  height: 100vh;
-  width: 30vw;
+  
 }
 
 .javascript-maximize {
@@ -74,8 +72,6 @@
 }
 
 .javascript-content {
-  height: 30vh;
-  width: 28vw;
   margin-left: 3%;
   margin-top: 0.4rem;
   background-color: transparent;

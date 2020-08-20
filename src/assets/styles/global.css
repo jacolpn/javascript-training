@@ -6,8 +6,9 @@
   --green-dark: #04BF58;
   --green-high-text: #012406;
   --white: #ecfaec;
-  --white-transparency-medium: rgba(255, 255, 255, 0.06);
-  --white-transparency-high: rgba(255, 255, 255, 0.03);
+  --white-transparency-low: rgba(255, 255, 255, 0.12);
+  --white-transparency-medium: rgba(255, 255, 255, 0.08);
+  --white-transparency-high: rgba(255, 255, 255, 0.04);
   --grey: #d4ebdb;
   --grey-dark: #aec2ae;
   --grey-squares: rgba(22, 130, 25, 0.2);
@@ -30,6 +31,13 @@ body {
   color: var(--white);
   background-color: #282c34;
   font-family: 'Red Rose', cursive;
+}
+
+.assign-bottom {
+  text-align: right;
+  margin: 2.2rem 1rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 .squares li {
