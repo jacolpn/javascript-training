@@ -1,5 +1,5 @@
 .section-tabs {
-  margin: 0 auto;
+  margin: auto;
   padding: 3rem 1rem;
   display: none;
   align-items: center;
@@ -43,10 +43,9 @@
 }
 
 .tab-content>section {
+  margin-top: 2rem;
   color: var(--grey);
   font-weight: 300;
-  margin: 0.5rem;
-  padding: 1rem 1.8rem;
   animation: ups 1s;
 }
 
@@ -60,9 +59,80 @@
   }
 }
 
+.javascript-wrapper {
+  height: 100vh;
+  width: 30vw;
+}
+
+.javascript-maximize {
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.01px solid var(--white);
+  border-radius: 0.1rem;
+}
+
+.javascript-content {
+  height: 30vh;
+  width: 28vw;
+  margin-left: 3%;
+  margin-top: 0.4rem;
+  background-color: transparent;
+}
+
+.javascript-title {
+  width: 92%;
+  height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.javascript-icon-maximize {
+  width: 8%;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.javascript-bar-horizontal {
+  width: 13px;
+  margin: 11px 0 0 9px;
+  height: 0.1rem;
+  background-color: var(--white);
+  animation: rotate 0.5s;
+}
+
+.javascript-bar-vertical {
+  width: 13px;
+  margin: -1px 0 0 9px;
+  height: 0.1rem;
+  background-color: var(--white);
+  transform: rotate(90deg);
+  animation: rotate 0.5s;
+  animation-delay: 0.1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(90deg)
+  }
+}
+
 @media (max-width: 400px) {
   .btn-tab {
     font-size: 1.2rem;
     padding: 0.7rem;
+  }
+
+  .javascript-wrapper {
+    height: 100vh;
+    width: 90vw;
   }
 }

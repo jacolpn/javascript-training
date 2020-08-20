@@ -6,11 +6,25 @@
   align-items: center;
 }
 
+.wrapper-login {
+  margin: 0;
+  padding: 0;
+}
+
+.close-login {
+  text-align: right;
+  margin: 0 0 -1.5rem 0;
+  padding: 0 0.5rem 0 0;
+  cursor: pointer;
+  animation: fade-login 500ms;
+}
+
 .form-login {
-  margin: 3rem;
-  background-color: var(--white);
-  padding: 1.5rem;
-  border-radius: 0.2rem;
+  margin: 0;
+  background-color: var(--white-transparency-high);
+  padding: 2.5rem;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
 }
 
 .input-block-login {
@@ -24,14 +38,15 @@
 .input-login {
   width: 100%;
   display: block;
-  margin-top: 0.5rem;
+  margin: 0.8rem 0 2rem 0;
   padding: 0.4rem;
   font-size: 1rem;
-  background-color: var(--grey);
+  font: 400 1.0rem Archivo;
+  background-color:  var(--white-transparency-medium);
   border-radius: 0.2rem;
-  border: 1px solid var(--green-high-text);
-  outline-color: var(--green-high-text);
-  color: var(--green-high-text);
+  border: 1px solid var(--white);
+  outline-color: var(--green-dark);
+  color: var(--white);
 }
 
 .form-login {
@@ -53,11 +68,12 @@
   display: block;
   min-width: 9rem;
   border: none;
-  background-color: var(--green);
+  background-color: transparent;
   color: var(--white);
-  border-radius: 1.7rem;
+  border-radius: 0 0 0.7rem 0.7rem;
+  border: 1px solid var(--white);
   margin: auto;
-  padding: 0.5rem;
+  padding: 0.7rem;
   cursor: pointer;
   outline: none;
   font: 700 1.0rem Archivo;
@@ -92,7 +108,7 @@
 }
 
 .form-hide-login {
-  animation: down-login 1.2s forwards;
+  animation: down-login 1s forwards;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -104,7 +120,22 @@
   }
 }
 
-form.validate-error-login {
+.form-close-login {
+  animation: close-login 500ms ease-in-out;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes close-login {
+  from { 
+    transform: scale(100%);
+    opacity: 1;
+  } to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.validate-error-login {
   animation: nono-login 200ms linear, fade-login paused;
   animation-iteration-count: 2;
 }
@@ -121,29 +152,13 @@ form.validate-error-login {
   }
 }
 
-.squares li {
-  background-color: rgba(255, 255, 255, 0.14);
-  display: block;
-  position: absolute;
-  animation: up-squares 2s infinite alternate;
-  z-index: -1;
-  border-radius: 0.1rem;
-}
-
-@keyframes up-squares {
-  from {
-    opacity: 0;
-    transform: translateY(0);
-  } 50%{
-    opacity: 1;
-  } to {
-    opacity: 0;
-    transform: translateY(-900px) rotate(960deg);
-  }
-}
-
 @media (max-width: 400px) {
   .input-block-login {
     padding: 0.3rem;
   }
+
+  .input-login {
+    width: 100%;
+    display: block;
+    margin: 0.8rem 0 0.8rem 0;
 }

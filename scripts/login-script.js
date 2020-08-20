@@ -1,8 +1,32 @@
 const btnLogin = document.querySelector(".btn-login");
-const form = document.querySelector("#form-login");
 const sectionTabs = document.querySelector("#section-tabs");
 const sectionLogin = document.querySelector("#section-login");
+const closeLogin = document.querySelector("#close-login");
+const wrapperLogin = document.querySelector("#wrapper-login");
 
+closeLogin.addEventListener("click", event => {
+  sectionLogin.classList.add("form-close-login");
+  
+  const formHidden = document.querySelector(".form-close-login");
+  if (formHidden) {
+    formHidden.addEventListener("animationend", event => {
+      sectionLogin.parentNode.removeChild(sectionLogin);
+      sectionTabs.style.display = "flex";
+    })
+  }
+
+  sectionLogin.addEventListener("animationstart", event => {
+    if(event.animationName == "close-login") {
+      document.querySelector("body").style.overflow = "hidden";
+    }
+  });
+  
+  sectionLogin.addEventListener("animationend", event => {
+    if(event.animationName == "close-login")
+      sectionLogin.style.display = "none";
+      document.querySelector("body").style.overflow = "none";
+  });
+});
 /* Inserir uma classe em um componente */
 btnLogin.addEventListener("click", event => {
   event.preventDefault();
@@ -10,7 +34,7 @@ btnLogin.addEventListener("click", event => {
   const fields = [...document.querySelectorAll(".input-block-login input")]
   fields.forEach(field => {
     if (field.value == "")
-    form.classList.add("validate-error-login")
+    wrapperLogin.classList.add("validate-error-login")
   });
 
   const formError = document.querySelector(".validate-error-login");
@@ -21,7 +45,7 @@ btnLogin.addEventListener("click", event => {
       }
     });
   } else {
-    form.classList.add("form-hide-login");
+    sectionLogin.classList.add("form-hide-login");
   }
 
   const formHidden = document.querySelector(".form-hide-login");
@@ -33,15 +57,15 @@ btnLogin.addEventListener("click", event => {
   }
 });
 
-form.addEventListener("animationstart", event => {
+sectionLogin.addEventListener("animationstart", event => {
   if(event.animationName == "down-login") {
     document.querySelector("body").style.overflow = "hidden";
   }
 });
 
-form.addEventListener("animationend", event => {
+sectionLogin.addEventListener("animationend", event => {
   if(event.animationName == "down-login")
-    form.style.display = "none";
+    sectionLogin.style.display = "none";
     document.querySelector("body").style.overflow = "none";
 });
   

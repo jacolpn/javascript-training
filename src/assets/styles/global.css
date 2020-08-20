@@ -6,8 +6,11 @@
   --green-dark: #04BF58;
   --green-high-text: #012406;
   --white: #ecfaec;
+  --white-transparency-medium: rgba(255, 255, 255, 0.06);
+  --white-transparency-high: rgba(255, 255, 255, 0.03);
   --grey: #d4ebdb;
   --grey-dark: #aec2ae;
+  --grey-squares: rgba(22, 130, 25, 0.2);
 
   font-size: 100%;
 }
@@ -24,7 +27,28 @@ html, body {
 }
 
 body {
-  color: var(--green-high-text);
+  color: var(--white);
   background-color: #282c34;
   font-family: 'Red Rose', cursive;
+}
+
+.squares li {
+  background-color: var(--grey-squares);
+  display: block;
+  position: absolute;
+  animation: up-squares 2s infinite alternate;
+  z-index: -1;
+  border-radius: 0.1rem;
+}
+
+@keyframes up-squares {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  } 50%{
+    opacity: 1;
+  } to {
+    opacity: 0;
+    transform: translateY(-900px) rotate(960deg);
+  }
 }
