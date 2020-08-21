@@ -1,6 +1,7 @@
 const btnLogin = document.querySelector(".btn-login");
 const sectionTabs = document.querySelector("#section-tabs");
 const sectionLogin = document.querySelector("#section-login");
+const sectionLoading = document.querySelector("#loading-effect");
 const closeLogin = document.querySelector("#close-login");
 const wrapperLogin = document.querySelector("#wrapper-login");
 
@@ -24,7 +25,7 @@ closeLogin.addEventListener("click", event => {
   sectionLogin.addEventListener("animationend", event => {
     if(event.animationName == "close-login")
       sectionLogin.style.display = "none";
-      document.querySelector("body").style.overflow = "none";
+      // document.querySelector("body").style.overflow = "none";
   });
 });
 /* Inserir uma classe em um componente */
@@ -52,7 +53,8 @@ btnLogin.addEventListener("click", event => {
   if (formHidden) {
     formHidden.addEventListener("animationend", event => {
       sectionLogin.parentNode.removeChild(sectionLogin);
-      sectionTabs.style.display = "flex";
+      sectionLoading.style.display = "flex";
+      // sectionTabs.style.display = "flex";
     })
   }
 });

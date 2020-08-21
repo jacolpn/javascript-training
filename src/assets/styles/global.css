@@ -3,7 +3,7 @@
   --primary: #fd951f;
   --color-line-in-white: #6A6180;
   --green: #04D361;
-  --green-dark: #04BF58;
+  --green-dark: #01ac4e;
   --green-high-text: #012406;
   --white: #ecfaec;
   --white-transparency-low: rgba(255, 255, 255, 0.12);
@@ -12,7 +12,7 @@
   --grey: #d4ebdb;
   --grey-dark: #aec2ae;
   --grey-squares: rgba(22, 130, 25, 0.2);
-
+  --tool: #FBC56C;
   font-size: 100%;
 }
 
@@ -20,11 +20,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html, body {
-  height: 100vh;
-  width: 100vw;
 }
 
 body {
