@@ -36,19 +36,16 @@ body {
 header {
   height: 5vh;
   width: 100vw;
-  background-color: #fff;
 }
 
 main {
   height: 90vh;
   width: 100vw;
-  background-color: darkolivegreen;
 }
 
 footer {
   height: 5vh;
   width: 100vw;
-  background-color: chartreuse;
 }
 
 header>div {
@@ -127,7 +124,7 @@ footer>div>p:hover {
   }
 
   main {
-    height: 75vh;
+    height: 76vh;
     width: 100vw;
   }
 }
