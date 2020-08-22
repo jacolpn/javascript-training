@@ -42,16 +42,19 @@ body {
 header {
   height: 5vh;
   width: 100vw;
+  background-color: #fff;
 }
 
 main {
   height: 90vh;
   width: 100vw;
+  background-color: brown;
 }
 
 footer {
   height: 5vh;
   width: 100vw;
+  background-color: chartreuse;
 }
 
 header>div {
@@ -59,6 +62,7 @@ header>div {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 10px;
 }
 
@@ -80,18 +84,17 @@ footer>div>p:hover {
 }
 
 .dark-mode {
-  height: 17px;
-  width: 22px;
-  margin: 10px 4px 0 0;
+  height: 50%;
+  width: 2%;
+  margin-right: 8px;
   border-radius: 44%;
   cursor: pointer;
   background-color: var(--text-black-hover);
 }
 
 .white-mode {
-  height: 17px;
-  width: 22px;
-  margin: 10px 0 0 4px;
+  height: 50%;
+  width: 2%;
   border-radius: 44%;
   cursor: pointer;
   background-color: var(--text-white-hover);
@@ -118,19 +121,19 @@ footer>div>p:hover {
   }
 }
 
-@media (max-width: 400px) {
-  header {
-    height: 10vh;
-    width: 100vw;
+@media (max-width: 600px) {
+  .dark-mode {
+    height: 60%;
+    width: 5%;
   }
   
-  main {
-    height: 80vh;
-    width: 100vw;
+  .white-mode {
+    height: 60%;
+    width: 5%;
   }
 
-  header {
-    height: 10vh;
+  main {
+    height: 80vh;
     width: 100vw;
   }
 }
