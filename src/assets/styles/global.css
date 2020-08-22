@@ -42,7 +42,7 @@ header {
 main {
   height: 90vh;
   width: 100vw;
-  background-color: darkblue;
+  background-color: darkolivegreen;
 }
 
 footer {
@@ -127,7 +127,7 @@ footer>div>p:hover {
   }
 
   main {
-    height: 80vh;
+    height: 75vh;
     width: 100vw;
   }
 }
