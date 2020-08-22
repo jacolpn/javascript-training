@@ -1,18 +1,14 @@
 :root {
-  --black: #130f0d;
-  --primary: #fd951f;
-  --color-line-in-white: #6A6180;
+  --tool: #FBC56C;
   --green: #04D361;
   --green-dark: #01ac4e;
-  --green-high-text: #012406;
+  --grey-squares: rgba(22, 130, 25, 0.2);
   --white: #ecfaec;
+  --grey: #d4ebdb;
+  --grey-dark: #aec2ae;
   --white-transparency-low: rgba(255, 255, 255, 0.12);
   --white-transparency-medium: rgba(255, 255, 255, 0.08);
   --white-transparency-high: rgba(255, 255, 255, 0.04);
-  --grey: #d4ebdb;
-  --grey-dark: #aec2ae;
-  --grey-squares: rgba(22, 130, 25, 0.2);
-  --tool: #FBC56C;
   font-size: 100%;
 }
 
@@ -26,13 +22,36 @@ body {
   color: var(--white);
   background-color: #282c34;
   font-family: 'Red Rose', cursive;
+  height: 100vh;
+  width: 100vw;
 }
 
-.assign-bottom {
+header {
+  height: 5vh;
+  width: 100vw;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  padding: 1.5vh 2vw 0 0;
+}
+
+footer>p {
   text-align: right;
-  margin: 2.2rem 1rem 0 0;
   font-size: 0.8rem;
   opacity: 0.6;
+  cursor: default;
+}
+
+footer>p:hover {
+  color: var(--green-dark);
+  transition: .2s;
 }
 
 .squares li {

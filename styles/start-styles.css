@@ -1,0 +1,164 @@
+.section-start {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-close-start {
+  display: flex;
+  margin-bottom: -1.5rem;
+}
+
+.title-close-start {
+  width: 91%;
+  height: 20px;
+}
+
+.close-start {
+  height: 20px;
+  width: 7%;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 1.0rem Archivo;
+  cursor: pointer;  
+  animation: fade-start 500ms;
+  filter: blur(0.03rem);
+  animation: move-start 500ms;
+}
+
+.close-start:hover {
+  padding-bottom: 1px;
+  color: var(--green-dark);
+  font-size: 95%;
+  filter: blur(0.07rem);
+  transition: .1s;
+}
+
+.form-start {
+  background-color: var(--white-transparency-high);
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+  padding: 2.5rem;
+  height: 13rem;
+  width: 17rem;
+  animation: fade-start 500ms;
+}
+
+.form-start>div {
+  animation: move-start 500ms;
+}
+
+.form-start>div>label {
+  font-size: 1.1rem;
+}
+
+.input-start {
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  background-color:  var(--white-transparency-medium);
+  font: 300 0.9rem Archivo;
+  border: 1px solid var(--white);
+  outline-color: var(--green-dark);
+  color: var(--white);
+}
+
+.btn-start {
+  min-width: 9rem;
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 0 0 0.7rem 0.7rem;
+  border: 1px solid var(--white);
+  padding: 0.7rem;
+  cursor: pointer;
+  outline: none;
+  font: 700 1.0rem Archivo;
+  text-transform: uppercase;
+  animation: move-start 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+.btn-start:hover {
+  background: var(--green-dark);
+  filter: blur(0.03rem);
+}
+
+.form-hide-start {
+  animation: down-start 1s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.form-close-start {
+  animation: close-start 500ms ease-in-out;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.validate-error-start {
+  animation: nono-start 200ms linear, fade-start paused;
+  animation-iteration-count: 2;
+}
+
+@keyframes fade-start {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  } to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes move-start {
+  from {
+    opacity: 0;
+    transform: translateX(-35%);
+  } to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes down-start {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  } to {
+    opacity: 1;
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes close-start {
+  from { 
+    opacity: 1;
+    transform: scale(100%);
+  } to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes nono-start {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  35% {
+    opacity: 0.8;
+    transform: translateX(-15%);
+  }
+  70% {
+    opacity: 0.8;
+    transform: translateX(15%);
+  }
+}

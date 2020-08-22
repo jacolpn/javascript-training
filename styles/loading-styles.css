@@ -1,9 +1,22 @@
 .loading-effect {
-  height: 90vh;
-  width: 100vw;
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.wrapper-loading {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-effect>p {
+  position: absolute;
+  margin-top: 7.3rem;
+  font: 400 2.0rem Archivo;
 }
 
 .keyboard-loading {
