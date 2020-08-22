@@ -1,5 +1,5 @@
 .section-start {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@
   border-radius: 100%;
   border: none;
   background-color: transparent;
-  color: var(--white);
+  color: var(--text-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +36,14 @@
 
 .close-start:hover {
   padding-bottom: 1px;
-  color: var(--green-dark);
+  color: var(--green-hover);
   font-size: 95%;
   filter: blur(0.07rem);
   transition: .1s;
 }
 
 .form-start {
-  background-color: var(--white-transparency-high);
+  background-color: var(--background-white-transparency-high);
   text-align: center;
   border-radius: 0 0 1rem 1rem;
   padding: 2.5rem;
@@ -65,20 +65,20 @@
   margin: 1rem 0 1.5rem 0;
   padding: 0.4rem;
   border-radius: 0.2rem;
-  background-color:  var(--white-transparency-medium);
+  background-color:  var(--background-white-transparency-medium);
   font: 300 0.9rem Archivo;
-  border: 1px solid var(--white);
-  outline-color: var(--green-dark);
-  color: var(--white);
+  border: 1px solid var(--text-white);
+  outline-color: var(--green-hover);
+  color: var(--text-white);
 }
 
 .btn-start {
   min-width: 9rem;
   border: none;
   background-color: transparent;
-  color: var(--white);
+  color: var(--text-white);
   border-radius: 0 0 0.7rem 0.7rem;
-  border: 1px solid var(--white);
+  border: 1px solid var(--text-white);
   padding: 0.7rem;
   cursor: pointer;
   outline: none;
@@ -90,7 +90,7 @@
 }
 
 .btn-start:hover {
-  background: var(--green-dark);
+  background: var(--green-hover);
   filter: blur(0.03rem);
 }
 
