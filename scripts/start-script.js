@@ -11,17 +11,21 @@ function StartPage() {
     formHidden: $(".form-hide-start"),
     body: $("body"),
   }
-  
-  function init() {
+
+  function close() {
     html.closeStart.addEventListener("click", event => {
+      event.preventDefault();
+
       html.sectionStart.classList.add("form-close-start");
-      
+
       html.sectionStart.addEventListener("animationend", event => {
         if(event.animationName == "close-start")
         html.sectionStart.style.display = "none";
       });
     });
-
+  }
+  
+  function handleEnter() {
     html.btnStart.addEventListener("click", event => {
       event.preventDefault();
 
@@ -41,7 +45,6 @@ function StartPage() {
         html.sectionStart.classList.add("form-hide-start");
       }
 
-      
       if (html.formHidden) {
         html.formHidden.addEventListener("animationend", event => {
           // sectionStart.parentNode.removeChild(sectionStart);
@@ -63,6 +66,12 @@ function StartPage() {
         html.body.style.overflow = "visible";
     });
   }
+
+  function init() {
+    close();
+    handleEnter();  
+  }
+
   return {
     init
   }
