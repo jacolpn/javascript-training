@@ -1,38 +1,32 @@
 .loading-effect {
+  height: 100%;
+  width: 100%;
   display: none;
+  justify-content: center;
+  align-items: center; 
+}
+
+.wrapper-loading {
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.wrapper-loading {
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading-effect>p {
-  position: absolute;
-  margin-top: 7.3rem;
+.loading-effect>div>p {
   font: 400 2.0rem Archivo;
+  margin: 0.5rem 0 0 0;
 }
 
 .keyboard-loading {
   height: 3.8rem;
   width: 7rem;
   z-index: 2;
-  padding: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   border-radius: 7px;
   background: linear-gradient(
     135deg,
     var(--green),
-    var(--green-dark))
+    var(--green-hover))
   ;
   transform: perspective(10px) rotateX(2deg);
   transform-origin: 50% 100%;
@@ -47,13 +41,13 @@
   top: 7px;
   border-radius: 2px;
   height: 4px;
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
   transform: scaleY(.8);
-  background: var(--grey-dark);
+  background: var(--grey-hover);
   box-shadow: 
-    0 12px 0 var(--grey-dark),
-    0 24px 0 var(--grey-dark),
-    0 36px 0 var(--grey-dark)
+    0 12px 0 var(--grey-hover),
+    0 24px 0 var(--grey-hover),
+    0 36px 0 var(--grey-hover)
   ;
 }
 
@@ -64,7 +58,7 @@
   border-radius: 3px;
   margin: 0 0 3.4rem -14px;
   transform: translateX(34px);
-  background: linear-gradient(var(--green), var(--green-dark));
+  background: linear-gradient(var(--green), var(--green-hover));
   animation: slide 2s ease infinite;
   z-index: 1;
 }
@@ -118,7 +112,7 @@
   width: 40px;
   height: 46px;
   border-radius: 5px;
-  background: var(--white);
+  background: var(--text-color);
   transform: translateY(46px);
   animation: paper 2s linear infinite;
   z-index: 2;
@@ -133,11 +127,11 @@
   border-radius: 2px;
   height: 4px;
   transform: scaleY(.8);
-  background: var(--grey-dark);
+  background: var(--grey-hover);
   box-shadow:
-    0 12px 0 var(--grey-dark),
-    0 24px 0 var(--grey-dark),
-    0 36px 0 var(--grey-dark)
+    0 12px 0 var(--grey-hover),
+    0 24px 0 var(--grey-hover),
+    0 36px 0 var(--grey-hover)
   ;
 }
 

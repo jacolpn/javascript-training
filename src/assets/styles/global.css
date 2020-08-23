@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-body {
+html {
   color: var(--text-color);
   background-color: var(--background-color);
   font-family: 'Red Rose', cursive;

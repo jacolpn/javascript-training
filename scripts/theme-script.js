@@ -1,6 +1,6 @@
 function Theme() {
   const html = {
-    body: $("body"),
+    body: $("html"),
     btnTheme: [...$('.themes-button').children],
     themeDefault: $('[data-open]'),
   }
@@ -15,6 +15,7 @@ function Theme() {
     removeAllActiveClass();
     const target = event.currentTarget;
     target.className += " active-theme";
+    
     if (target.className == "btn-dark-mode active-theme") {
       html.body.classList.remove("theme-white");
       html.body.className += " theme-dark";

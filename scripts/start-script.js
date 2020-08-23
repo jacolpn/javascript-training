@@ -1,15 +1,13 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-
 function StartPage() {
   const html = {
     btnStart: $(".btn-start"),
     closeStart: $(".close-start"),
     wrapperStart: $(".wrapper-start"),
     sectionStart: $(".section-start"),
+    sectionLoading: $('.loading-effect'),
     fields: [...$$(".input-start")],
     formHidden: $(".form-hide-start"),
-    body: $("body"),
+    body: $("html"),
   }
 
   function close() {
@@ -17,8 +15,11 @@ function StartPage() {
       html.sectionStart.classList.add("form-close-start");
 
       html.sectionStart.addEventListener("animationend", event => {
-        if(event.animationName == "close-start")
-        html.sectionStart.style.display = "none";
+        if(event.animationName == "close-start") {
+          html.sectionStart.style.display = "none";
+          html.sectionLoading.style.display = "flex";
+        }
+        // sectionStart.parentNode.removeChild(sectionStart);
       });
     });
   }
@@ -45,8 +46,7 @@ function StartPage() {
 
       if (html.formHidden) {
         html.formHidden.addEventListener("animationend", event => {
-          // sectionStart.parentNode.removeChild(sectionStart);
-          // sectionLoading.style.display = "flex";
+
           // sectionTabs.style.display = "flex";
         })
       }
