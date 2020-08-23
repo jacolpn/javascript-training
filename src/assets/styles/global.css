@@ -138,12 +138,12 @@ footer>div>p:hover {
 }
 
 @media (max-width: 600px) {
-  .dark-mode {
+  .btn-dark-mode {
     height: 60%;
     width: 5%;
   }
   
-  .white-mode {
+  .btn-white-mode {
     height: 60%;
     width: 5%;
   }
