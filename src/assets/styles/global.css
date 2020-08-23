@@ -1,18 +1,12 @@
 :root {
-  /* Page color's white */  
-  --text-white: #ecfaec;
-  --text-white-hover: #e1f7e1;
+  --text-color: #ecfaec;
+  --text-color-hover: #e1f7e1;
   --grey: #d4ebdb;
   --grey-hover: #aec2ae;
-  --background-white-transparency-low: rgba(255, 255, 255, 0.12);
-  --background-white-transparency-medium: rgba(255, 255, 255, 0.08);
-  --background-white-transparency-high: rgba(255, 255, 255, 0.04);
-  --background-black: #282c34;
-  
-  /* Page color's dark */
-  --background-white: #ecfaec;
-  --text-black: #282c34;
-  --text-black-hover: #232730;
+  --background-color-transparency-low: rgba(255, 255, 255, 0.12);
+  --background-color-transparency-medium: rgba(255, 255, 255, 0.08);
+  --background-color-transparency-high: rgba(255, 255, 255, 0.04);
+  --background-color: #282c34;
 
   /* Utils */
   --tool: #FBC56C;
@@ -28,8 +22,8 @@
 }
 
 body {
-  color: var(--text-white);
-  background-color: var(--background-black);
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-family: 'Red Rose', cursive;
 }
 
@@ -76,20 +70,22 @@ footer>div>p:hover {
 
 .theme-dark {
   transition: .2s;
-  --text-white: #ecfaec;
-  --background-black: #282c34;
-  --background-white-transparency-low: rgba(255, 255, 255, 0.12);
-  --background-white-transparency-medium: rgba(255, 255, 255, 0.08);
-  --background-white-transparency-high: rgba(255, 255, 255, 0.04);
+  --text-color: #ecfaec;
+  --text-color-hover: #e1f7e1;
+  --background-color: #282c34;
+  --background-color-transparency-low: rgba(255, 255, 255, 0.12);
+  --background-color-transparency-medium: rgba(255, 255, 255, 0.08);
+  --background-color-transparency-high: rgba(255, 255, 255, 0.04);
 }
 
 .theme-white {
   transition: .2s;
-  --text-white: #282c34;
-  --background-black: #ecfaec;
-  --background-white-transparency-low: rgba(0, 0, 0, 0.12);
-  --background-white-transparency-medium: rgba(0, 0, 0, 0.08);
-  --background-white-transparency-high: rgba(0, 0, 0, 0.04);
+  --text-color: #282c34;
+  --text-color-hover: #232730;
+  --background-color: #ecfaec;
+  --background-color-transparency-low: rgba(0, 0, 0, 0.12);
+  --background-color-transparency-medium: rgba(0, 0, 0, 0.08);
+  --background-color-transparency-high: rgba(0, 0, 0, 0.04);
 }
 
 .btn-dark-mode {
@@ -99,7 +95,7 @@ footer>div>p:hover {
   border-radius: 44%;
   outline: none;
   cursor: pointer;
-  background-color: var(--text-black-hover);
+  background-color: #282c34;
 }
 
 .btn-white-mode {
@@ -108,7 +104,7 @@ footer>div>p:hover {
   border-radius: 44%;
   outline: none;
   cursor: pointer;
-  background-color: var(--text-white-hover);
+  background-color: #ecfaec;
 }
 
 .active-theme {

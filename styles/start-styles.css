@@ -22,7 +22,7 @@
   border-radius: 100%;
   border: none;
   background-color: transparent;
-  color: var(--text-white);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .form-start {
-  background-color: var(--background-white-transparency-high);
+  background-color: var(--background-color-transparency-high);
   text-align: center;
   border-radius: 0 0 1rem 1rem;
   padding: 2.5rem;
@@ -65,20 +65,20 @@
   margin: 1rem 0 1.5rem 0;
   padding: 0.4rem;
   border-radius: 0.2rem;
-  background-color:  var(--background-white-transparency-medium);
+  background-color:  var(--background-color-transparency-medium);
   font: 300 0.9rem Archivo;
-  border: 1px solid var(--text-white);
+  border: 1px solid var(--text-color);
   outline-color: var(--green-hover);
-  color: var(--text-white);
+  color: var(--text-color);
 }
 
 .btn-start {
   min-width: 9rem;
   border: none;
   background-color: transparent;
-  color: var(--text-white);
+  color: var(--text-color);
   border-radius: 0 0 0.7rem 0.7rem;
-  border: 1px solid var(--text-white);
+  border: 1px solid var(--text-color);
   padding: 0.7rem;
   cursor: pointer;
   outline: none;
@@ -164,7 +164,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .close-start {
     filter: blur(0.01rem);
   }

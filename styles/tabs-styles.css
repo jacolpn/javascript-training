@@ -15,7 +15,7 @@
 }
 
 .btn-tab {
-  color: var(--white);
+  color: var(--text-color);
   border: none;
   background: transparent;
   font: 700 1.1rem Archivo;
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.01px solid var(--white);
+  border: 0.01px solid var(--text-color);
   border-radius: 0.1rem;
 }
 
@@ -98,7 +98,7 @@
   width: 13px;
   margin: 11px 0 0 9px;
   height: 0.1rem;
-  background-color: var(--white);
+  background-color: var(--text-color);
   animation: rotate 0.5s;
 }
 
@@ -106,7 +106,7 @@
   width: 13px;
   margin: -1px 0 0 9px;
   height: 0.1rem;
-  background-color: var(--white);
+  background-color: var(--text-color);
   transform: rotate(90deg);
   animation: rotate 0.5s;
   animation-delay: 0.1s;
