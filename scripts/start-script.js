@@ -14,8 +14,6 @@ function StartPage() {
 
   function close() {
     html.closeStart.addEventListener("click", event => {
-      event.preventDefault();
-
       html.sectionStart.classList.add("form-close-start");
 
       html.sectionStart.addEventListener("animationend", event => {

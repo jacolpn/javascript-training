@@ -74,21 +74,46 @@ footer>div>p:hover {
   transition: .2s;
 }
 
-.dark-mode {
+.theme-dark {
+  transition: .2s;
+  --text-white: #ecfaec;
+  --background-black: #282c34;
+  --background-white-transparency-low: rgba(255, 255, 255, 0.12);
+  --background-white-transparency-medium: rgba(255, 255, 255, 0.08);
+  --background-white-transparency-high: rgba(255, 255, 255, 0.04);
+}
+
+.theme-white {
+  transition: .2s;
+  --text-white: #282c34;
+  --background-black: #ecfaec;
+  --background-white-transparency-low: rgba(0, 0, 0, 0.12);
+  --background-white-transparency-medium: rgba(0, 0, 0, 0.08);
+  --background-white-transparency-high: rgba(0, 0, 0, 0.04);
+}
+
+.btn-dark-mode {
   height: 50%;
   width: 2%;
   margin-right: 8px;
   border-radius: 44%;
+  outline: none;
   cursor: pointer;
   background-color: var(--text-black-hover);
 }
 
-.white-mode {
+.btn-white-mode {
   height: 50%;
   width: 2%;
   border-radius: 44%;
+  outline: none;
   cursor: pointer;
   background-color: var(--text-white-hover);
+}
+
+.active-theme {
+  transition: .2s;
+  border: 1px solid var(--green-hover);
 }
 
 .squares li {
@@ -124,7 +149,7 @@ footer>div>p:hover {
   }
 
   main {
-    height: 76vh;
+    height: 77vh;
     width: 100vw;
   }
 }
