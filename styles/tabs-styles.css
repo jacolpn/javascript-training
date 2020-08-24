@@ -1,17 +1,29 @@
 .section-tabs {
-  height: 90vh;
-  width: 100vw;
+  height: 100%;
   display: none;
   justify-content: center;
 }
 
+.section-tabs>div {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid var(--green-hover);
+}
+
 .wrapper-tabs {
-  margin-top: 3rem;
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem 3rem 0 3rem;
+  background-color: var(--background-color-transparency-high);
 }
 
 .tab-links {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .btn-tab {
@@ -32,7 +44,7 @@
   content: "";
   height: 2px;
   width: 0%;
-  background-color: var(--green-dark);
+  background-color: var(--green-hover);
   transition: .4s;
 }
 
@@ -42,6 +54,7 @@
 }
 
 .tab-content>section {
+  display: none;
   margin-top: 2rem;
   color: var(--grey);
   font-weight: 300;
@@ -56,10 +69,6 @@
   to {
     opacity: 1;
   }
-}
-
-.javascript-wrapper {
-  
 }
 
 .javascript-maximize {
@@ -127,8 +136,15 @@
     padding: 0.7rem;
   }
 
-  .javascript-wrapper {
-    height: 100vh;
-    width: 90vw;
+  .section-tabs>div {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--green-hover);
+  }
+
+  .wrapper-tabs {
+    padding: 1rem 0 0 0;
   }
 }

@@ -4,9 +4,10 @@ function StartPage() {
     closeStart: $(".close-start"),
     wrapperStart: $(".wrapper-start"),
     sectionStart: $(".section-start"),
+    sectionTabs: $(".section-tabs"),
     sectionLoading: $('.loading-effect'),
     fields: [...$$(".input-start")],
-    formHidden: $(".form-hide-start"),
+    
     body: $("html"),
   }
 
@@ -33,7 +34,7 @@ function StartPage() {
         html.wrapperStart.classList.add("validate-error-start")
       });
 
-      const formError = document.querySelector(".validate-error-start");
+      const formError = $(".validate-error-start");
       if (formError) {
         formError.addEventListener("animationend", event => {
           if (event.animationName == "nono-start") {
@@ -44,10 +45,11 @@ function StartPage() {
         html.sectionStart.classList.add("form-hide-start");
       }
 
-      if (html.formHidden) {
-        html.formHidden.addEventListener("animationend", event => {
-
-          // sectionTabs.style.display = "flex";
+      const formHidden = $(".form-hide-start");
+      if (formHidden) {
+        formHidden.addEventListener("animationend", event => {
+          html.sectionStart.style.display = "none";
+          html.sectionTabs.style.display = "flex";
         })
       }
     });

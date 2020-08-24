@@ -1,5 +1,3 @@
-const $ = document.querySelector.bind(document);
-
 function TabNavigation() {
   const html = {
     links: [...$('.tab-links').children],
