@@ -21,7 +21,7 @@
 .keyboard-loading {
   height: 3.8rem;
   width: 7rem;
-  z-index: 2;
+  z-index: 1;
   border-radius: 7px;
   background: linear-gradient(
     135deg,
@@ -30,7 +30,6 @@
   ;
   transform: perspective(10px) rotateX(2deg);
   transform-origin: 50% 100%;
-  z-index: 3;
 }
 
 .keyboard-loading::before {
@@ -60,7 +59,6 @@
   transform: translateX(34px);
   background: linear-gradient(var(--green), var(--green-hover));
   animation: slide 2s ease infinite;
-  z-index: 1;
 }
 
 .slider-loading::before,
@@ -86,14 +84,13 @@
 }
 
 .hand-loading {
-  margin: 0 0 3.7rem 0;
+  margin: 0 0 60px 0;
   border-radius: 0.1rem 0 0 0.1rem;
   height: 3px;
   width: 12px;
   background-color: var(--tool);
   animation: slide 2s ease infinite;
   transform: translateX(34px);
-  z-index: 1;
 }
 
 .hand-loading::before {
@@ -108,14 +105,13 @@
 
 .paper-loading {
   position: absolute;
-  margin: 0 0 5rem 0;
+  margin: 0 0 80px 0;
   width: 40px;
   height: 46px;
   border-radius: 5px;
   background: var(--text-color);
   transform: translateY(46px);
   animation: paper 2s linear infinite;
-  z-index: 2;
 }
 
 .paper-loading::before {
