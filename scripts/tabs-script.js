@@ -3,6 +3,10 @@ function TabNavigation() {
     links: [...$('.tab-links').children],
     contents: [...$('.tab-content').children],
     openTab: $('[data-open]'),
+    numberJS: $('.number-js'),
+    titleJS: $('.title-js'),
+    subjectJS: $('.subject-javascript'),
+    prepare: $('#prepare'),
   }
   
   function hidellTabContent() {
@@ -40,6 +44,26 @@ function TabNavigation() {
     hidellTabContent();
     listenForChange();
     html.openTab.click();
+    console.log(javaScript.content[0].description);
+    console.log(javaScript.content.length);
+    // html.numberJS.innerHTML += javaScript.content[0].id;
+    // html.titleJS.innerHTML += javaScript.content[0].title;
+    // html.subjectJS.innerHTML += javaScript.content[0].description;
+
+    var listJS = javaScript.content.map(function(item) {
+      return `
+        <div>
+          <div class="javascript-wrapper">
+            <div class="title-javascript">
+              <h2 class="number-js">${item.id}</h2>
+              <p class="title-js">${item.title}</p>
+            </div>
+            <div class="subject-javascript">${item.description}</div>
+          </div>
+      `;
+    });
+    html.prepare.innerHTML = listJS.join("");
+
   }
 
   return {
