@@ -84,3 +84,10 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 400px) {
+  .tab-content>section {
+    margin-top: 1.5rem;
+    height: 380px;
+  }
+}
