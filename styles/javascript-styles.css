@@ -1,9 +1,21 @@
+.tab-content {
+  height: 85%;
+  width: 100%;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .tab-content>section {
   display: none;
   margin-top: 2rem;
   color: var(--grey);
   font-weight: 300;
   animation: upList 1s;
+  height: 400px;
 }
 
 .tab-content>section>p {
@@ -33,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--text-color);
   width: 10%;
   padding-left: 3%;
   font-size: 1.3rem;
@@ -41,6 +54,8 @@
 
 .title-javascript>p {
   width: 90%;
+  color: var(--text-color);
+  font-weight: 400;
 }
 
 .subject-javascript {
@@ -57,6 +72,7 @@
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 @keyframes upList {

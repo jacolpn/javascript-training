@@ -15,13 +15,14 @@
 
 .wrapper-tabs {
   width: 100%;
+  height: 15%;
   border-radius: 2rem 2rem 0 0;
   padding: 1rem 3rem 0 3rem;
 }
 
 .tab-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 
@@ -34,6 +35,10 @@
   outline: none;
   position: relative;
   cursor: pointer;
+}
+
+.btn-tab:nth-child(2) {
+  margin: 0 3rem;
 }
 
 .btn-tab::after {
@@ -54,15 +59,16 @@
 
 @media (max-width: 400px) {
   .btn-tab {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.7rem;
   }
 
+  .btn-tab:nth-child(2) {
+    margin: 0 1rem;
+  }
+
   .section-tabs>div {
-    height: 100%;
     width: 90%;
-    display: flex;
-    justify-content: center;
   }
 
   .wrapper-tabs {
