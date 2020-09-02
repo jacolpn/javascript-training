@@ -17,7 +17,7 @@
   width: 100%;
   height: 15%;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem 3rem 0 3rem;
+  padding: 0.5rem 3rem 0 3rem;
 }
 
 .tab-links {
@@ -31,7 +31,7 @@
   border: none;
   background: transparent;
   font: 700 1.1rem Archivo;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
   position: relative;
   cursor: pointer;
@@ -60,7 +60,7 @@
 @media (max-width: 400px) {
   .btn-tab {
     font-size: 1.1rem;
-    padding: 0.7rem;
+    padding: 0.3rem 0.5rem;
   }
 
   .btn-tab:nth-child(2) {
@@ -72,6 +72,6 @@
   }
 
   .wrapper-tabs {
-    padding: 1rem 0 0 0;
+    padding: 0.8rem 0 0 0;
   }
 }

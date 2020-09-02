@@ -11,11 +11,11 @@
 
 .tab-content>section {
   display: none;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: var(--grey);
   font-weight: 300;
   animation: upList 1s;
-  height: 400px;
+  height: 500px;
 }
 
 .tab-content>section>p {
@@ -87,7 +87,7 @@
 
 @media (max-width: 400px) {
   .tab-content>section {
-    margin-top: 1.5rem;
-    height: 380px;
+    margin-top: 1rem;
+    height: 400px;
   }
 }
