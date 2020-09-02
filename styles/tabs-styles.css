@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 1.8em;
 }
 
 .btn-tab {

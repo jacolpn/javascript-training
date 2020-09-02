@@ -1,7 +1,6 @@
 .tab-content {
   height: 85%;
   width: 100%;
-  margin-top: 10px;
   overflow-y: scroll;
 }
 
@@ -11,7 +10,6 @@
 
 .tab-content>section {
   display: none;
-  margin-top: 1rem;
   color: var(--grey);
   font-weight: 300;
   animation: upList 1s;
@@ -27,7 +25,7 @@
 }
 
 .javascript-wrapper {
-  margin: 10px 0;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -87,7 +85,6 @@
 
 @media (max-width: 400px) {
   .tab-content>section {
-    margin-top: 1rem;
     height: 400px;
   }
 }
