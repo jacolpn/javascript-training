@@ -4,6 +4,8 @@ function TabNavigation() {
     contents: [...$('.tab-content').children],
     openTab: $('[data-open]'),
     javascriptTab: $('#javascript-tab'),
+    testngTab: $('#testng-tab'),
+    animatedTab: $('#animated-tab'),
   }
   
   function hidellTabContent() {
@@ -24,11 +26,15 @@ function TabNavigation() {
 
     if (id = 'javascript-tab') {
       showJavascriptTab();
+    } else if (id = 'testng-tab') {
+      showTestngTab();
+    } else if (id = 'animated-tab') {
+      showJavaTab();
     }
   }
 
   function showJavascriptTab() {
-    const listJS = javaScript.content.map(item => {
+    const listJS = javaScriptJSON.content.map(item => {
       return `
         <div>
           <div class="javascript-wrapper">
@@ -36,11 +42,43 @@ function TabNavigation() {
               <h2 class="number-js">${item.id}</h2>
               <p class="title-js">${item.title}</p>
             </div>
-            <div class="subject-javascript">${item.description}</div>
-          </div>
+          <div class="subject-javascript">${item.description}</div>
+        </div>
       `;
     });
     html.javascriptTab.innerHTML = listJS.join("");
+  }
+
+  function showTestngTab() {
+    const listTestng = testngJSON.content.map(item => {
+      return `
+        <div>
+          <div class="javascript-wrapper">
+            <div class="title-javascript">
+              <h2 class="number-js">${item.id}</h2>
+              <p class="title-js">${item.title}</p>
+            </div>
+          <div class="subject-javascript">${item.description}</div>
+        </div>
+      `;
+    });
+    html.testngTab.innerHTML = listTestng.join("");
+  }
+
+  function showJavaTab() {
+    const listAnimated = animatedJSON.content.map(item => {
+      return `
+        <div>
+          <div class="javascript-wrapper">
+            <div class="title-javascript">
+              <h2 class="number-js">${item.id}</h2>
+              <p class="title-js">${item.title}</p>
+            </div>
+          <div class="subject-javascript">${item.description}</div>
+        </div>
+      `;
+    });
+    html.animatedTab.innerHTML = listAnimated.join("");
   }
 
   function selectTab(event) {

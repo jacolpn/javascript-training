@@ -7,7 +7,6 @@ function StartPage() {
     sectionTabs: $(".section-tabs"),
     sectionLoading: $('.loading-effect'),
     fields: [...$$(".input-start")],
-    
     body: $("html"),
   }
 
@@ -24,7 +23,7 @@ function StartPage() {
       });
     });
   }
-  
+
   function handleEnter() {
     html.btnStart.addEventListener("click", event => {
       event.preventDefault();
