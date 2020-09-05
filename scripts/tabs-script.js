@@ -24,61 +24,31 @@ function TabNavigation() {
     const tabcontent = $('#' + id);
     tabcontent.style.display = "block";
 
-    if (id = 'javascript-tab') {
-      showJavascriptTab();
-    } else if (id = 'testng-tab') {
-      showTestngTab();
-    } else if (id = 'animated-tab') {
-      showJavaTab();
+    if (id === 'javascript-tab') {
+      showList(javaScriptJSON, html.javascriptTab);
+    }
+    if (id === 'testng-tab') {
+      showList(testngJSON, html.testngTab);
+    }
+    if (id === 'animated-tab') {
+      showList(animatedJSON, html.animatedTab);
     }
   }
 
-  function showJavascriptTab() {
-    const listJS = javaScriptJSON.content.map(item => {
+  function showList(json, tab) {
+    const listTab = json.content.map(item => {
       return `
         <div>
-          <div class="javascript-wrapper">
-            <div class="title-javascript">
+          <div class="tab-list-wrapper">
+            <div class="title-tab-list">
               <h2 class="number-js">${item.id}</h2>
               <p class="title-js">${item.title}</p>
             </div>
-          <div class="subject-javascript">${item.description}</div>
+          <div class="subject-tab-list">${item.description}</div>
         </div>
       `;
     });
-    html.javascriptTab.innerHTML = listJS.join("");
-  }
-
-  function showTestngTab() {
-    const listTestng = testngJSON.content.map(item => {
-      return `
-        <div>
-          <div class="javascript-wrapper">
-            <div class="title-javascript">
-              <h2 class="number-js">${item.id}</h2>
-              <p class="title-js">${item.title}</p>
-            </div>
-          <div class="subject-javascript">${item.description}</div>
-        </div>
-      `;
-    });
-    html.testngTab.innerHTML = listTestng.join("");
-  }
-
-  function showJavaTab() {
-    const listAnimated = animatedJSON.content.map(item => {
-      return `
-        <div>
-          <div class="javascript-wrapper">
-            <div class="title-javascript">
-              <h2 class="number-js">${item.id}</h2>
-              <p class="title-js">${item.title}</p>
-            </div>
-          <div class="subject-javascript">${item.description}</div>
-        </div>
-      `;
-    });
-    html.animatedTab.innerHTML = listAnimated.join("");
+    tab.innerHTML = listTab.join("");
   }
 
   function selectTab(event) {

@@ -24,12 +24,12 @@
   margin-bottom: 10px;
 }
 
-.javascript-wrapper {
+.tab-list-wrapper {
   margin-bottom: 10px;
   width: 100%;
 }
 
-.title-javascript {
+.title-tab-list {
   background-color: var(--background-color-transparency-low);
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@
   cursor: default;
 }
 
-.title-javascript>h2 {
+.title-tab-list>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,13 +50,13 @@
   font-weight: 300;
 }
 
-.title-javascript>p {
+.title-tab-list>p {
   width: 90%;
   color: var(--text-color);
   font-weight: 400;
 }
 
-.subject-javascript {
+.subject-tab-list {
   background-color: var(--green-list);
   display: flex;
   justify-content: center;
