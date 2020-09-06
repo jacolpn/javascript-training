@@ -1,12 +1,11 @@
 :root {
-  --text-color: #ecfaec;
-  --text-color-hover: #e1f7e1;
+  --bg: #FCFCFC;
+  --bg-panel-low: rgba(0, 0, 0, 0.12);
+  --bg-panel-medium: rgba(0, 0, 0, 0.08);
+  --bg-panel-high: rgba(0, 0, 0, 0.04);
+  --color-text: #333333;
   --grey: #d4ebdb;
   --grey-hover: #aec2ae;
-  --background-color-transparency-low: rgba(255, 255, 255, 0.12);
-  --background-color-transparency-medium: rgba(255, 255, 255, 0.08);
-  --background-color-transparency-high: rgba(255, 255, 255, 0.04);
-  --background-color: #282c34;
 
   /* Utils */
   --tool: #FBC56C;
@@ -23,8 +22,8 @@
 }
 
 html {
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--color-text);
+  background-color: var(--bg);
   font-family: 'Red Rose', cursive;
 }
 
@@ -49,7 +48,7 @@ header>div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 10px;
+  padding: 5px 5px 0 0;
 }
 
 footer>div {
@@ -67,50 +66,6 @@ footer>div>p {
 footer>div>p:hover {
   color: var(--green-hover);
   transition: .2s;
-}
-
-.theme-dark {
-  transition: .2s;
-  --text-color: #ecfaec;
-  --text-color-hover: #e1f7e1;
-  --background-color: #282c34;
-  --background-color-transparency-low: rgba(255, 255, 255, 0.12);
-  --background-color-transparency-medium: rgba(255, 255, 255, 0.08);
-  --background-color-transparency-high: rgba(255, 255, 255, 0.04);
-}
-
-.theme-white {
-  transition: .2s;
-  --text-color: #282c34;
-  --text-color-hover: #232730;
-  --background-color: #ecfaec;
-  --background-color-transparency-low: rgba(0, 0, 0, 0.12);
-  --background-color-transparency-medium: rgba(0, 0, 0, 0.08);
-  --background-color-transparency-high: rgba(0, 0, 0, 0.04);
-}
-
-.btn-dark-mode {
-  height: 50%;
-  width: 2%;
-  margin-right: 8px;
-  border-radius: 44%;
-  outline: none;
-  cursor: pointer;
-  background-color: #282c34;
-}
-
-.btn-white-mode {
-  height: 50%;
-  width: 2%;
-  border-radius: 44%;
-  outline: none;
-  cursor: pointer;
-  background-color: #ecfaec;
-}
-
-.active-theme {
-  transition: .2s;
-  border: 1px solid var(--green-hover);
 }
 
 .squares li {

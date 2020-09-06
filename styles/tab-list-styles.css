@@ -30,7 +30,7 @@
 }
 
 .title-tab-list {
-  background-color: var(--background-color-transparency-low);
+  background-color: var(--bg-panel-low);
   display: flex;
   justify-content: space-between;
   height: 30px;
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
+  color: var(--color-text);
   width: 10%;
   padding-left: 3%;
   font-size: 1.3rem;
@@ -52,7 +52,7 @@
 
 .title-tab-list>p {
   width: 90%;
-  color: var(--text-color);
+  color: var(--color-text);
   font-weight: 400;
 }
 
@@ -66,11 +66,11 @@
   padding: 5px 20px 5px 20px;
   border-radius: 0 1rem 0 1rem;
   margin: -10px 0 0 10%;
-  border: 2px solid var(--background-color-transparency-low);
+  border: 2px solid var(--bg-panel-low);
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--color-text);
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
