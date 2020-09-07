@@ -3,7 +3,11 @@ var testngJSON = {
     {
       "id": 1,
       "title": "Estudar JavaScript",
-      "description": "Estudando de tudo que é jeito.",
+      "description": `
+        <p>Estudando de tudo que é jeito.</p>
+        <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+        <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+      `,
       "type": "Curto"
     },
     {

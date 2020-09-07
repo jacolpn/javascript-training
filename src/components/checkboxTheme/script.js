@@ -20,7 +20,7 @@ function Theme() {
     }
 
     const darkMode = {
-      colorText: "#B5B5B5",
+      colorText: "#d4f1d4",
       bg: "#333333",
       bgPanelLow: "rgba(255, 255, 255, 0.88)",
       bgPanelMedium: "rgba(255, 255, 255, 0.55)",

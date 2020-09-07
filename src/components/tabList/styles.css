@@ -33,7 +33,7 @@
   background-color: var(--bg-panel-low);
   display: flex;
   justify-content: space-between;
-  height: 30px;
+  height: 35px;
   width: 90%;
   border-radius: 0 1rem 0 1rem;
   cursor: default;
@@ -53,29 +53,28 @@
 .title-tab-list>p {
   width: 90%;
   color: var(--color-text);
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .subject-tab-list {
   background-color: var(--green-list);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
   width: 90%;
   padding: 5px 20px 5px 20px;
   border-radius: 0 1rem 0 1rem;
   margin: -10px 0 0 10%;
   border: 2px solid var(--bg-panel-low);
   cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 400;
   color: var(--color-text);
   display: inline-block;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   direction: ltr;
+  text-align: justify;
+  /* height: 40px; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
 }
 
 @keyframes upList {
