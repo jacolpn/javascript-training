@@ -16,17 +16,15 @@ function Theme() {
       bgPanelLow: getStyle(html.body, "--bg-panel-low"),
       bgPanelMedium: getStyle(html.body, "--bg-panel-medium"),
       bgPanelHigh: getStyle(html.body, "--bg-panel-high"),
-      colorHeadings: getStyle(html.body, "--color-headings"),
-      colorText: getStyle(html.body, "--color-text"),
+      colorText: getStyle(html.body, "--color-text")
     }
 
     const darkMode = {
+      colorText: "#B5B5B5",
       bg: "#333333",
-      bgPanelLow: "rgba(255, 255, 255, 0.12)",
-      bgPanelMedium: "rgba(255, 255, 255, 0.08)",
-      bgPanelHigh: "rgba(255, 255, 255, 0.04)",
-      colorHeadings: "#3664FF",
-      colorText: "#B5B5B5"
+      bgPanelLow: "rgba(255, 255, 255, 0.88)",
+      bgPanelMedium: "rgba(255, 255, 255, 0.55)",
+      bgPanelHigh: "rgba(255, 255, 255, 0.33)"
     }
 
     const transformKey = key => 

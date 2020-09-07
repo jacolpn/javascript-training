@@ -68,40 +68,9 @@ footer>div>p:hover {
   transition: .2s;
 }
 
-.squares li {
-  background-color: var(--grey-squares);
-  display: block;
-  position: absolute;
-  animation: up-squares 2s infinite alternate;
-  z-index: -1;
-  border-radius: 0.1rem;
-}
-
-@keyframes up-squares {
-  from {
-    opacity: 0;
-    transform: translateY(0);
-  } 50%{
-    opacity: 1;
-  } to {
-    opacity: 0;
-    transform: translateY(-900px) rotate(960deg);
-  }
-}
-
 @media (max-width: 600px) {
-  .btn-dark-mode {
-    height: 60%;
-    width: 5%;
-  }
-  
-  .btn-white-mode {
-    height: 60%;
-    width: 5%;
-  }
-
   main {
-    height: 77vh;
+    height: 79vh;
     width: 100vw;
   }
 }

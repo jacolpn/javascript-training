@@ -123,11 +123,11 @@
   border-radius: 2px;
   height: 4px;
   transform: scaleY(.8);
-  background: var(--grey-hover);
+  background: var(--tool);
   box-shadow:
-    0 12px 0 var(--grey-hover),
-    0 24px 0 var(--grey-hover),
-    0 36px 0 var(--grey-hover)
+    0 12px 0 var(--tool),
+    0 24px 0 var(--tool),
+    0 36px 0 var(--tool)
   ;
 }
 
