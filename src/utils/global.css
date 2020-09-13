@@ -27,11 +27,6 @@ html {
   font-family: 'Red Rose', cursive;
 }
 
-header {
-  height: 5vh;
-  width: 100vw;
-}
-
 main {
   height: 90vh;
   width: 100vw;
@@ -40,15 +35,6 @@ main {
 footer {
   height: 5vh;
   width: 100vw;
-}
-
-header>div {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 5px 5px 0 0;
 }
 
 footer>div {
@@ -70,7 +56,7 @@ footer>div>p:hover {
 
 @media (max-width: 600px) {
   main {
-    height: 79vh;
+    height: 78vh;
     width: 100vw;
   }
 }
