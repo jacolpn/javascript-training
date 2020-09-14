@@ -1,13 +1,4 @@
 function TabNavigation() {
-  const html = {
-    links: [...$('.tab-links').children],
-    contents: [...$('.tab-content').children],
-    openTab: $('[data-open]'),
-    javascriptTab: $('#javascript-tab'),
-    testngTab: $('#testng-tab'),
-    animatedTab: $('#animated-tab'),
-  }
-  
   function hidellTabContent() {
     html.contents.forEach(section => {
       section.style.display = "none";

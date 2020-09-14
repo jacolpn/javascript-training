@@ -1,10 +1,4 @@
 function Theme() {
-  const html = {
-    body: $("html"),
-    divTheme: ("#checkbox-theme"),
-    checkbox: $("input[name=theme]"),
-  }
-
   function changeTheme() {
     const getStyle = (element, style) => 
       window

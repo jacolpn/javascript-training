@@ -1,17 +1,4 @@
 function StartPage() {
-  const html = {
-    btnStart: $(".btn-start"),
-    closeStart: $(".close-start"),
-    wrapperStart: $(".wrapper-start"),
-    sectionStart: $(".section-start"),
-    sectionTabs: $(".section-tabs"),
-    sectionLoading: $('.loading-effect'),
-    fields: [...$$(".input-start")],
-    inputStart: $('.input-start'),
-    nameHeader: $('.name-header'),
-    body: $("html"),
-  }
-
   function close() {
     html.closeStart.addEventListener("click", event => {
       html.sectionStart.classList.add("form-close-start");
@@ -49,7 +36,7 @@ function StartPage() {
       const formHidden = $(".form-hide-start");
       if (formHidden) {
         formHidden.addEventListener("animationend", event => {
-          html.nameHeader.innerHTML += `Hello <b>${html.inputStart.value}</b>!!`;
+          showNameHeader();
           html.sectionStart.style.display = "none";
           html.sectionTabs.style.display = "flex";
         });
@@ -71,7 +58,7 @@ function StartPage() {
 
   function init() {
     close();
-    handleEnter();  
+    handleEnter();
   }
 
   return {
