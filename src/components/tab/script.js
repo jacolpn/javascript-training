@@ -11,13 +11,14 @@ function TabNavigation() {
   function hidellTabContent() {
     html.contents.forEach(section => {
       section.style.display = "none";
-    })
+      section.scrollTop = 0;
+    });
   }
   
   function removeAllActiveClass() {
     html.links.forEach(tab => {
       tab.className = tab.className.replace(" active", "");
-    })
+    });
   }
   
   function showCurrentTab(id) {
@@ -35,22 +36,6 @@ function TabNavigation() {
     }
   }
 
-  // function showList(json, tab) {
-  //   const listTab = json.content.map(item => {
-  //     return `
-  //       <div>
-  //         <div class="tab-list-wrapper">
-  //           <div class="title-tab-list">
-  //             <h2 class="number-js">${item.id}</h2>
-  //             <p class="title-js">${item.title}</p>
-  //           </div>
-  //         <div class="subject-tab-list">${item.description}</div>
-  //       </div>
-  //     `;
-  //   });
-  //   tab.innerHTML = listTab.join("");
-  // }
-
   function selectTab(event) {
     hidellTabContent();
     removeAllActiveClass();
@@ -61,8 +46,8 @@ function TabNavigation() {
   
   function listenForChange() {
     html.links.forEach(tab => {
-      tab.addEventListener('click', selectTab)
-    })
+      tab.addEventListener('click', selectTab);
+    });
   }
   
   function init() {

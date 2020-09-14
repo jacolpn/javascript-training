@@ -52,7 +52,7 @@ function StartPage() {
           html.nameHeader.innerHTML += `Hello <b>${html.inputStart.value}</b>!!`;
           html.sectionStart.style.display = "none";
           html.sectionTabs.style.display = "flex";
-        })
+        });
       }
     });
 
