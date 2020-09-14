@@ -8,7 +8,6 @@ function StartPage() {
           html.sectionStart.style.display = "none";
           html.sectionLoading.style.display = "flex";
         }
-        // sectionStart.parentNode.removeChild(sectionStart);
       });
     });
   }

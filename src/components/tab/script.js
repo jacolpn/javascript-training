@@ -18,12 +18,15 @@ function TabNavigation() {
 
     if (id === 'javascript-tab') {
       showList(javaScriptJSON, html.javascriptTab);
+      selectList(id);
     }
     if (id === 'testng-tab') {
       showList(testngJSON, html.testngTab);
+      selectList(id);
     }
     if (id === 'animated-tab') {
       showList(animatedJSON, html.animatedTab);
+      selectList(id);
     }
   }
 
