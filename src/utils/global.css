@@ -1,9 +1,9 @@
 :root {
-  --bg: #FCFCFC;
+  --bg: #333333;
   --bg-panel-low: rgba(0, 0, 0, 0.12);
   --bg-panel-medium: rgba(0, 0, 0, 0.08);
   --bg-panel-high: rgba(0, 0, 0, 0.04);
-  --color-text: #2a2e2a;
+  --color-text: #d4f1d4;
   --grey: #d4ebdb;
   --grey-hover: #aec2ae;
 
@@ -30,28 +30,6 @@ html {
 main {
   height: 90vh;
   width: 100vw;
-}
-
-footer {
-  height: 5vh;
-  width: 100vw;
-}
-
-footer>div {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-}
-
-footer>div>p {
-  font-size: 0.8rem;
-  opacity: 0.6;
-  cursor: default;
-}
-
-footer>div>p:hover {
-  color: var(--green-hover);
-  transition: .2s;
 }
 
 @media (max-width: 600px) {

@@ -9,7 +9,7 @@ input[type=checkbox]{
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: grey;
+  background: rgba(255, 255, 255, 0.33);
   float: right;
   border-radius: 100px;
   position: relative;

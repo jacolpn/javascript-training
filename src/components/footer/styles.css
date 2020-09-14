@@ -1,0 +1,21 @@
+footer {
+  height: 5vh;
+  width: 100vw;
+}
+
+footer>div {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+footer>div>p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  cursor: default;
+}
+
+footer>div>p:hover {
+  color: var(--green-hover);
+  transition: .2s;
+}

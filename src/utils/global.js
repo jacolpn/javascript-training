@@ -16,8 +16,8 @@ const html = {
   fields: [...$$(".input-start")],
   inputStart: $('.input-start'),
   nameHeader: $('.name-header'),
-  toggleHeader: $('.toggle'),
   body: $("html"),
+  footer: $("footer"),
 
   divTheme: ("#checkbox-theme"),
   checkbox: $("input[name=theme]"),

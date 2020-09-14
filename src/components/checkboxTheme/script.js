@@ -13,9 +13,9 @@ function Theme() {
       colorText: getStyle(html.body, "--color-text")
     }
 
-    const darkMode = {
-      colorText: "#d4f1d4",
-      bg: "#333333",
+    const whiteMode = {
+      colorText: "#2a2e2a",
+      bg: "#FCFCFC",
       bgPanelLow: "rgba(255, 255, 255, 0.88)",
       bgPanelMedium: "rgba(255, 255, 255, 0.55)",
       bgPanelHigh: "rgba(255, 255, 255, 0.33)"
@@ -31,7 +31,7 @@ function Theme() {
     }
 
     html.checkbox.addEventListener("change", ({target}) => {
-      target.checked ? changeColors(darkMode) : changeColors(initialColors)
+      target.checked ? changeColors(whiteMode) : changeColors(initialColors)
     });
   }
   

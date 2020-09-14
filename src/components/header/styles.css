@@ -8,6 +8,7 @@ header {
 header>div {
   height: 100%;
   width: 98%;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
