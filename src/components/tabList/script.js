@@ -2,11 +2,9 @@ function showList(json, tab) {
   const listTab = json.content.map((item, index) => {
     return `
       <button class="wrapper-new" id="${item.id}" data-id="${item.id}">
-        <div class="content-new">
-          <div class="title-new">
-            <h2>${index + 1}</h2>
-            <p>${item.title}</p>
-          </div>
+        <div class="title-new">
+          <h2>${index + 1}</h2>
+          <p>${item.title}</p>
         </div>
         <div class="subject-new">${item.description}</div>
       </button>

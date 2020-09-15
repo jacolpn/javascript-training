@@ -25,26 +25,18 @@
   margin-bottom: 15px;
 }
 
-.content-new {
-  margin-bottom: 10px;
-  width: 100%;
-}
-
 .title-new {
   background-color: var(--bg-panel-low);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 35px;
   width: 90%;
   border-radius: 0 1rem 0 1rem;
   cursor: default;
-  padding: 4px;
 }
 
 .title-new>h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--color-text);
   width: 10%;
   padding-left: 3%;
@@ -57,6 +49,7 @@
   color: var(--color-text);
   font-weight: 700;
   font-size: 1.2rem;
+  padding-bottom: 5px;
 }
 
 .subject-new {
@@ -96,9 +89,5 @@
 
   .title-new>p {
     font-size: 1rem;
-  }
-
-  .title-new {
-    padding: 0;
   }
 }
