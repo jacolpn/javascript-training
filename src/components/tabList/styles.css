@@ -93,4 +93,12 @@
   .tab-content>section {
     height: 400px;
   }
+
+  .title-new>p {
+    font-size: 1rem;
+  }
+
+  .title-new {
+    padding: 0;
+  }
 }
