@@ -6,7 +6,7 @@ const html = {
   wrapperStart: $(".wrapper-start"),
   sectionTabs: $(".section-tabs"),
   sectionLoading: $('.loading-effect'),
-  wrapperLoading: $('.wrapper-loading'),
+  
   
   btnStart: $(".btn-start"),
   closeStart: $(".close-start"),
