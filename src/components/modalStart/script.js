@@ -69,14 +69,14 @@ function StartPage() {
 
     html.sectionStart.addEventListener("animationstart", event => {
       if(event.animationName == "down-start") {
-        html.body.style.overflow = "hidden";
+        html.html.style.overflow = "hidden";
       }
     });
 
     html.sectionStart.addEventListener("animationend", event => {
       if(event.animationName == "down-start")
         html.sectionStart.style.display = "none";
-        html.body.style.overflow = "visible";
+        html.html.style.overflow = "visible";
     });
   }
 

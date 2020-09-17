@@ -6,11 +6,11 @@ function Theme() {
         .getPropertyValue(style);
   
     const initialColors = {
-      bg: getStyle(html.body, "--bg"),
-      bgPanelLow: getStyle(html.body, "--bg-panel-low"),
-      bgPanelMedium: getStyle(html.body, "--bg-panel-medium"),
-      bgPanelHigh: getStyle(html.body, "--bg-panel-high"),
-      colorText: getStyle(html.body, "--color-text")
+      bg: getStyle(html.html, "--bg"),
+      bgPanelLow: getStyle(html.html, "--bg-panel-low"),
+      bgPanelMedium: getStyle(html.html, "--bg-panel-medium"),
+      bgPanelHigh: getStyle(html.html, "--bg-panel-high"),
+      colorText: getStyle(html.html, "--color-text")
     }
 
     const whiteMode = {
@@ -26,7 +26,7 @@ function Theme() {
 
     const changeColors = (colors) => {
       Object.keys(colors).map(key => 
-        html.body.style.setProperty(transformKey(key), colors[key]) 
+        html.html.style.setProperty(transformKey(key), colors[key]) 
       );
     }
     const checkbox = $("input[name=theme]");
