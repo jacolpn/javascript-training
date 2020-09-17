@@ -1,4 +1,4 @@
-function showList(json, tab) {
+function createNews(json, tab) {
   const listTab = json.content.map((item, index) => {
     return `
       <button class="wrapper-new" id="${item.id}" data-id="${item.id}">
@@ -13,20 +13,20 @@ function showList(json, tab) {
   tab.innerHTML = listTab.join("");
 }
 
-function selectList(tab) {
+function selectNews(tab) {
   const testng = [...$(`#${tab}`).children];
 
   testng.forEach(tab => {
-    tab.addEventListener('click', handleList);
+    tab.addEventListener('click', handleNews);
   });
 }
 
-function handleList() {
+function handleNews() {
   const target = event.currentTarget;
-  showNew(target.dataset.id);
+  maximizeNews(target.dataset.id);
 }
 
-function showNew(id) {
+function maximizeNews(id) {
   const tabcontent = $('#' + id);
   if (tabcontent.children[1].style.height === "100%") {
     tabcontent.children[1].style.height = "40px";
