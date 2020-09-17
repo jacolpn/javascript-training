@@ -1,6 +1,27 @@
 function StartPage() {
+  function createStartPage() {
+    html.sectionStart.innerHTML += `
+      <div class="wrapper-start">
+        <div class="wrapper-close-start">
+          <div class="title-close-start"></div>
+          <button class="close-start">X</button>
+        </div>
+
+        <form action="" class="form-start">
+          <div>
+            <label for="start-email">
+              What's your name?
+            </label>
+            <input type="text" class="input-start" autofocus />
+          </div>
+          <button type="submit" class="btn-start">Send</button>
+        </form>
+      </div>
+    `;
+  }
   function close() {
-    html.closeStart.addEventListener("click", event => {
+    const closeStart = $(".close-start");
+    closeStart.addEventListener("click", event => {
       html.sectionStart.classList.add("form-close-start");
 
       html.sectionStart.addEventListener("animationend", event => {
@@ -13,10 +34,12 @@ function StartPage() {
   }
 
   function handleEnter() {
-    html.btnStart.addEventListener("click", event => {
+    const btnStart = $(".btn-start");
+    btnStart.addEventListener("click", event => {
       event.preventDefault();
 
-      html.fields.forEach(field => {
+      const fields = [...$$(".input-start")];
+      fields.forEach(field => {
         if (field.value == "")
         html.wrapperStart.classList.add("validate-error-start")
       });
@@ -35,7 +58,9 @@ function StartPage() {
       const formHidden = $(".form-hide-start");
       if (formHidden) {
         formHidden.addEventListener("animationend", event => {
-          showNameHeader();
+          const inputStart = $('.input-start');
+          showNameHeader(inputStart.value);
+
           html.sectionStart.style.display = "none";
           html.sectionTabs.style.display = "flex";
         });
@@ -56,6 +81,7 @@ function StartPage() {
   }
 
   function init() {
+    createStartPage();
     close();
     handleEnter();
   }

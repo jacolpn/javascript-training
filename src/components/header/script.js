@@ -1,3 +1,3 @@
-  function showNameHeader() {
-    html.nameHeader.innerHTML += `Hello <b>${html.inputStart.value}</b>!!`;
+  function showNameHeader(value) {
+    html.nameHeader.innerHTML += `Hello <b>${value}</b>!!`;
   }

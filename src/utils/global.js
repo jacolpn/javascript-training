@@ -6,12 +6,7 @@ const html = {
   wrapperStart: $(".wrapper-start"),
   sectionTabs: $(".section-tabs"),
   sectionLoading: $('.loading-effect'),
-  
-  
-  btnStart: $(".btn-start"),
-  closeStart: $(".close-start"),
-  fields: [...$$(".input-start")],
-  inputStart: $('.input-start'),
+
   nameHeader: $('.name-header'),
   body: $("html"),
   footer: $("footer"),
