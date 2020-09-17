@@ -29,8 +29,8 @@ function Theme() {
         html.body.style.setProperty(transformKey(key), colors[key]) 
       );
     }
-
-    html.checkbox.addEventListener("change", ({target}) => {
+    const checkbox = $("input[name=theme]");
+    checkbox.addEventListener("change", ({target}) => {
       target.checked ? changeColors(whiteMode) : changeColors(initialColors)
     });
   }
@@ -46,5 +46,6 @@ function Theme() {
 
 window.addEventListener('load', () => {
   const theme = Theme();
+  createHeader();
   theme.init();
 });
