@@ -38,10 +38,11 @@ function StartPage() {
     btnStart.addEventListener("click", event => {
       event.preventDefault();
 
+      const wrapperStart = $(".wrapper-start");
       const fields = [...$$(".input-start")];
       fields.forEach(field => {
         if (field.value == "")
-        html.wrapperStart.classList.add("validate-error-start")
+        wrapperStart.classList.add("validate-error-start")
       });
 
       const formError = $(".validate-error-start");

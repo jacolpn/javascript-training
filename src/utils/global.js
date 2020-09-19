@@ -8,7 +8,6 @@ const html = {
   footer: $("footer"),
 
   sectionStart: $(".section-start"),
-  wrapperStart: $(".wrapper-start"),
   sectionTabs: $(".section-tabs"),
   sectionLoading: $('.loading-effect'),
 }
